@@ -1,0 +1,50 @@
+/*Header CSS*/
+* {
+    font-family: sans-serif;
+}
+.MainHeaderBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 9vh;
+}
+
+
+/*Logo CSS*/
+.LogoBox {
+    height: 60px;
+    width: 70px;
+    background-color: #ffebcd;
+    border: solid 2px #000000;
+}
+
+
+/*Nav Link CSS*/
+.NavLinks {
+    width: 30%;
+    height: 30%;
+    
+}
+.NavList {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    list-style-position: outside;
+    font-size: 17px;
+}
+
+
+/*Login Button CSS*/
+.LoginButtonBox {
+    align-self: center; 
+    margin: 0.5% 2%;
+    padding: 0.2% 1%;
+}
+.LoginButton {
+    height: 35px;
+    width: 55px;
+    font-weight: bolder;
+    font-size: 15px;
+}

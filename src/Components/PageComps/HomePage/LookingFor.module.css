@@ -1,0 +1,72 @@
+* {
+    font-family: sans-serif;
+}
+p{
+    font-size: 17px;
+}
+.MainTitle{
+    text-align: center;
+}
+
+/*Info Section CSS*/
+.InfoAlignBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
+.InfoBoxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 5%;
+}
+.Icons{
+    background-color: #b3b3b3;
+    border: solid 2px #000000;
+    height: 100px;
+    width: 100px;
+}
+
+/*Change To Metro Box CSS*/
+.ChangeToAlignBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+.ChangeToBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Customer Review Section CSS*/
+.ReviewTitle{
+    text-align: center;
+    margin-top: 4%;
+}
+.ReviewBox{
+display: flex;
+justify-content: center;
+height: 40vh;
+max-width: 100%;
+margin-top: 5%;
+}
+.ReviewImageBox{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    height: 40vh;
+    margin-left: 20%;
+}
+.ReviewImage{
+    background-color: #ff9292;
+    border: #000000 2px solid ;
+    height: 300px;
+    width: 300px;
+}
+.ReviewTextBox{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    margin-right: 20%;
+}

@@ -1,0 +1,6 @@
+.FooterBox{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 1% 1%;
+}
