@@ -11,7 +11,7 @@ export default function LookingFor() {
         <div className={styles.InfoAlignBox}>
             <div className={styles.InfoBoxes}>
                 <img src='' alt='Appraisal' className={styles.Icons}></img>
-                <h3>Property Appraisal</h3>
+                <h3>Property Jeff Appraisal</h3>
                 <p>
                     We conduct a thorough appraisal of<br /> 
                     your property that you want to<br /> 
