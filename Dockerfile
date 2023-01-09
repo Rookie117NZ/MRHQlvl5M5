@@ -13,4 +13,5 @@ COPY . .
 
 RUN npm run build
 
-CMD [ "sh", "-c", "npm run start:production"]
+CMD [ "node", "src/index.js"]
+EXPOSE 3000
