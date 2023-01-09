@@ -13,5 +13,5 @@ COPY . .
 
 RUN npm run build
 
-CMD [ "node", "src/index.js"]
+CMD [ "sh", "-c", "src/index.js"]
 EXPOSE 3000
