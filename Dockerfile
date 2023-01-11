@@ -8,11 +8,10 @@ COPY package.json .
 COPY package-lock.json .
 
 RUN npm install
-RUN yarn install --production
 
 COPY . .
 
 RUN npm run build
 
-CMD [ "node", "src/index.js"]
 EXPOSE 3000
+CMD [ "sh", "-c", "src/index.js"]
