@@ -1,7 +1,49 @@
 import styles from './LookingFor.module.css'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 
 export default function LookingFor() {
-    return(<>
+    const [reviews, setReviews] = useState([]);
+    
+
+
+    useEffect(() => {  
+        const config = {
+            method: 'get',
+            url: 'http://localhost:27017',
+            headers: {  }
+        };
+        
+        axios(config)
+        .then(function (response) {
+            setReviews(response.data);
+            console.log(response)    
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+
+    //    axios.get("http://localhost:3005").then((res) => {
+    //      setReviews(res.reviews);
+    //      console.log(res);
+    //    });
+    }, []);
+
+
+    //useEffect(() => {
+    //const mockReviews = async (req, res) => {
+    //    try {
+    //        const result = await fetch('http://localhost:3005');
+    //        setReviews(res.result);
+    //        console.log(result)
+    //    } catch (e){
+    //      console.log(e)
+    //    }
+    //  };
+    //  
+    //});
+
+    return(
     <div>
         <div className={styles.MainTitle}>
             <h1>Tell us what you are looking for!!</h1>
@@ -64,15 +106,15 @@ export default function LookingFor() {
             <div className={styles.ReviewTextBox}>  
                 <div className={styles.ReviewText}>
                     <h3>Customer Review</h3>
-                    <p>
-                        "Something something I really like this house because it has this<br />
-                        feature and these curtains and has a layout that really appeals<br /> 
-                        to my lifestyle blah blah blah"
-                    </p>
-                    <p>- Jeff Jefferson</p>
+                    
+                    {reviews.map((reviews) => (
+                        <p>{reviews.customer}<br />
+                        {reviews.review}</p>
+                    ))}
+
                 </div>
             </div>  
         </div>
     </div>
-    </>)
+    )
 }

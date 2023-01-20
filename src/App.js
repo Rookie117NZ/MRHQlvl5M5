@@ -5,8 +5,7 @@ import SearchPage from './Components/PageComps/SearchPage/SearchPage';
 
 function App() {
   return (
-  <div>
     <HomePage />
-  </div>);
+  );
 }
 export default App;
